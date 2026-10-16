@@ -46,4 +46,11 @@ class CalculatorTest {
         assertFalse(calc.isPrime(-5), "There are not negative primer numbers.");
     }
 
+    @Test
+    @DisplayName("Testing for add failure")
+    void testFailure() {
+        assertEquals(-1, calc.add(5, 5), "5 + 5 is -1");
+        assertEquals(5, calc.add(5, 5), "5 + 5 is 5");
+    }
+
 }
