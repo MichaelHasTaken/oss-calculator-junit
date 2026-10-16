@@ -47,10 +47,9 @@ class CalculatorTest {
     }
 
     @Test
-    @DisplayName("Testing for add failure")
+    @DisplayName("Testing for add")
     void testFailure() {
-        assertEquals(-1, calc.add(5, 5), "5 + 5 is -1");
-        assertEquals(5, calc.add(5, 5), "5 + 5 is 5");
+        assertEquals(10, calc.add(5, 5), "5 + 5 is 10");
     }
 
 }
